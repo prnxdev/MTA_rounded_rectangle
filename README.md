@@ -24,7 +24,6 @@ end)
 ```
 
 #### TODO
-Add antyaliasing. Meybe to add more performance (not tested, just wrote and pulled). 
-If you know how to make code better - DO IT! YES, YOU CAN! YESTERDAY YOU SAID TOMORROW!
+Add antyaliasing. If you know how to make code better - DO IT! YES, YOU CAN! YESTERDAY YOU SAID TOMORROW!
 
 cheers.
