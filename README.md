@@ -15,10 +15,9 @@ Easy to use, cool effect. Why not to use?
 local texture = dxCreateRoundedRectangle(300,40,50) -- width: 300px, height: 40px, radius: 50% (0-100%)
 
 addEventHandler("onClientRender",root,
-  function()
-    if texture then
-      dxDrawImage(0,0,300,40,texture) -- drawing rounded texture at [0,0] with size [300,40]
-    end
+function()
+  if texture then
+    dxDrawImage(0,0,300,40,texture) -- drawing rounded texture at [0,0] with size [300,40]
   end
 end)
 ```
