@@ -12,7 +12,7 @@ Easy to use, cool effect. Why not to use?
 
 ##### SIMPLE AF
 ```lua
-local texture = dxCreateRoundedRectangle(300,40,50) -- width: 300px, height: 40px, radius: 50% (0-100%)
+local texture = dxCreateRoundedTexture(300,40,50) -- width: 300px, height: 40px, radius: 50% (0-100%)
 
 addEventHandler("onClientRender",root,
 function()

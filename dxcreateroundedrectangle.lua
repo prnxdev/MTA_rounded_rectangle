@@ -1,13 +1,13 @@
 function dxCreateRoundedTexture(text_width,text_height,radius)
 	assert(text_width,"Missing argument 'text_width' at dxCreateRoundedTexture")
-	assert(text_height,"Missing argument 'text_width' at dxCreateRoundedTexture")
-	assert(text_height,"Missing argument 'text_width' at dxCreateRoundedTexture")
+	assert(text_height,"Missing argument 'height' at dxCreateRoundedTexture")
+	assert(radius,"Missing argument 'radius' at dxCreateRoundedTexture")
 	if type(text_width) ~= "number" then outputDebugString("Bad argument @ 'dxCreateRoundedTexture' [Excepted number at argument 1, got " .. type(text_width) .. "]",2) return false end
 	if type(text_height) ~= "number" then outputDebugString("Bad argument @ 'dxCreateRoundedTexture' [Excepted number at argument 2, got " .. type(text_height) .. "]",2) return false end
 	if type(radius) ~= "number" then outputDebugString("Bad argument @ 'dxCreateRoundedTexture' [Excepted number at argument 3, got " .. type(radius) .. "]",2) return false end
 	if text_width < 0 then outputDebugString("text_width can't be less than 0",1) return false end
-	if text_height < 0 then outputDebugString("text_width can't be less than 0",1) return false end
-	if radius < 0 or radius > 100 then outputDebugString("Parametr 'radius' can't be between 0 and 100",1) return false end
+	if text_height < 0 then outputDebugString("text_height can't be less than 0",1) return false end
+	if radius < 0 or radius > 100 then outputDebugString("Parameter 'radius' can't be between 0 and 100",1) return false end
 
 	local texture = DxTexture(text_width,text_height)
 	local pix = texture:getPixels()
